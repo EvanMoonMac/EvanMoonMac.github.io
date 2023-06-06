@@ -16,10 +16,7 @@ img {
     height: auto
 }
 
-button {
-    background-color: #146C94;
-    color: #F6F1F1
-}
+
 
 h1 {
     text-align: center;
@@ -44,26 +41,59 @@ p,
 li {
     font-family: Arial, sans-serif;
     color: #146C94;
-    line-height: 1.5;
+    line-height: 150%;
 }
 
 .contacts {
     color: #F6F1F1;
 }
 
-button:hover {
-    background-color: #19A7CE;
-    color: #F6F1F1;
+#linkedin:hover { 
+    border-color: #6CC644;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.35em #6CC644;
+    transform: translateY(-3.5px);
+    transition: 0.1s;
+    cursor: pointer;
 }
 
-.linkedin {
+#github:hover {
+    border-color: #6CC644;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.35em #6CC644;
+    transform: translateY(-3.5px);
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+
+
+#linkedin {
     width: 200px;
     height: 50px;
     font-size: 20px;
-    border-radius: 10px;
-    margin-top: 12px;
-    margin-left: 605px;
+    position: relative;
+    margin-top: 10px;
+    left: 480px;
+    background: none;
+    color: rgb(210, 210, 210);
+    border: 4px solid;
+    background-color: #146C94;
 }
+
+#github {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    position: absolute;
+    top: 662px;
+    left: 748px;
+    background: none;
+    color: rgb(210, 210, 210);
+    border: 4px solid;
+    background-color: #146C94;
+}
+
 
 section {
     background-color: #AFD3E2;
@@ -73,10 +103,12 @@ section {
 
 #headshot {
     display: grid;
-    margin-left: 550px;
+    position: relative;
+    left: 550px;
     border: 7px #146C94 solid;
     border-radius: 20%;
-
+    /* transform: rotate(90deg); */
+`
 }
 
 .exp {
@@ -88,14 +120,16 @@ section {
 #timslogo {
     padding-left: 230px;
     padding-top: 0;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    transform: scale(1.5);
 }
 
 #mackenzie {
     padding-left: 230px;
-    margin-bottom: 0;
+    margin-bottom: 5px;
     width: 220px;
     height: auto;
+    transform: scale(1.5);
 }
 
 #workex {
