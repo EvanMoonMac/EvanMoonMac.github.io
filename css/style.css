@@ -20,10 +20,10 @@ header {
 }
 
 #EM_logo {
-    width: 80px;
-    height: 80px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 5px;
     margin-left: 20px;
 }
 
@@ -35,7 +35,7 @@ header {
     border: none;
     padding-left: 20px;
     padding-right: 20px;
-    line-height: 130px;
+    line-height: 80px;
     text-decoration: none;
     color: white;
 }
@@ -46,7 +46,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    line-height: 110px;
+    /* line-height: 110px; */
     background-color: rgb(65, 48, 0);
 }
 
@@ -60,7 +60,7 @@ header {
 
 .nav_bar:hover {
     background-color: rgb(25, 25, 25);
-    line-height: 120px;
+    line-height: 70px;
 }
 
 #headshot {
