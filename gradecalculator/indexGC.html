@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesGC.css">
+    <title>Grade Calculator</title>
+</head>
+<body>
+
+
+    <form>
+        <h1>Evan's Awesome Grade Calculator</h1>
+        <table>
+            <tr>
+                <td>Name</td>
+                <td>Grade</td>
+                <td>Weight</td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="number" id="grade1" class="numInput" min="0"></td>
+                <td><input type="number" id="weight1" class="numInput" min="0"></td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="number" id="grade2" class="numInput" min="0"></td>
+                <td><input type="number" id="weight2" class="numInput" min="0"></td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="number" id="grade3" class="numInput" min="0"></td>
+                <td><input type="number" id="weight3" class="numInput" min="0"></td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="number" id="grade4" class="numInput" min="0"></td>
+                <td><input type="number" id="weight4" class="numInput" min="0"></td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="number" id="grade5" class="numInput" min="0"></td>
+                <td><input type="number" id="weight5" class="numInput" min="0"></td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="number" id="grade6" class="numInput" min="0"></td>
+                <td><input type="number" id="weight6" class="numInput" min="0"></td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="number" id="grade7" class="numInput" min="0"></td>
+                <td><input type="number" id="weight7" class="numInput" min="0"></td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="number" id="grade8" class="numInput" min="0"></td>
+                <td><input type="number" id="weight8" class="numInput" min="0"></td>
+            </tr>
+
+
+
+        </table>
+        <button type="button" id="submit" onclick="calculate()" >Submit</button>
+
+        <p id="currentGrade"></p>
+
+
+
+        <h5>The "If you want" calculator:</h5>
+
+        <h5 id="msg">Only generates if inputted weights are less than 100%</h5>
+
+
+        <table>
+            <tr>
+                <td id="percent50"></td>
+            </tr>
+            <tr>
+                <td id="percent53"></td>
+            </tr>
+            <tr>
+                <td id="percent57"></td>
+            </tr>
+            <tr>
+                <td id="percent60"></td>
+            </tr>
+            <tr>
+                <td id="percent63"></td>
+            </tr>
+            <tr>
+                <td id="percent67"></td>
+            </tr>
+            <tr>
+                <td id="percent70"></td>
+            </tr>
+            <tr>
+                <td id="percent73"></td>
+            </tr>
+            <tr>
+                <td id="percent77"></td>
+            </tr>
+            <tr>
+                <td id="percent80"></td>
+            </tr>
+            <tr>
+                <td id="percent85"></td>
+            </tr>
+            <tr>
+                <td id="percent90"></td>
+            </tr>
+        </table>
+
+    </form>
+
+
+
+
+
+    <script src="indexGC.js"></script>
+</body>
+</html>
