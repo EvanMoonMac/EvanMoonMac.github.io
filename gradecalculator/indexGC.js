@@ -103,48 +103,45 @@ function calculate() {
         let completedAsDec = completed / 100;
         let remainingAsDec = remaining / 100;
 
-        needFor50 = (50 - completedAsDec * yourGrade) / remainingAsDec;
+        console.log(completedAsDec);
+        console.log(remainingAsDec);
+
+        needFor50 = (50 - completedAsDec * reportedGrade) / remainingAsDec;
         percent50.textContent = `If you want a 50% you need, ${needFor50.toFixed(2)}%`;
 
-        needFor53 = (53 - completedAsDec * yourGrade) / remainingAsDec;
+        needFor53 = (53 - completedAsDec * reportedGrade) / remainingAsDec;
         percent53.textContent = `If you want a 53% you need, ${needFor53.toFixed(2)}%`;
 
-        needFor57 = (57 - completedAsDec * yourGrade) / remainingAsDec;
+        needFor57 = (57 - completedAsDec * reportedGrade) / remainingAsDec;
         percent57.textContent = `If you want a 57% you need, ${needFor57.toFixed(2)}%`;
 
-        needFor60 = (60 - completedAsDec * yourGrade) / remainingAsDec;
+        needFor60 = (60 - completedAsDec * reportedGrade) / remainingAsDec;
         percent60.textContent = `If you want a 60% you need, ${needFor60.toFixed(2)}%`;
 
-        needFor63 = (63 - completedAsDec * yourGrade) / remainingAsDec;
+        needFor63 = (63 - completedAsDec * reportedGrade) / remainingAsDec;
         percent63.textContent = `If you want a 63% you need, ${needFor63.toFixed(2)}%`;
 
-        needFor67 = (67 - completedAsDec * yourGrade) / remainingAsDec;
+        needFor67 = (67 - completedAsDec * reportedGrade) / remainingAsDec;
         percent67.textContent = `If you want a 67% you need, ${needFor67.toFixed(2)}%`;
 
-        needFor70 = (70 - completedAsDec * yourGrade) / remainingAsDec;
+        needFor70 = (70 - completedAsDec * reportedGrade) / remainingAsDec;
         percent70.textContent = `If you want a 70% you need, ${needFor70.toFixed(2)}%`;
 
-        needFor73 = (73 - completedAsDec * yourGrade) / remainingAsDec;
+        needFor73 = (73 - completedAsDec * reportedGrade) / remainingAsDec;
         percent73.textContent = `If you want a 73% you need, ${needFor73.toFixed(2)}%`;
 
-        needFor77 = (77 - completedAsDec * yourGrade) / remainingAsDec;
+        needFor77 = (77 - completedAsDec * reportedGrade) / remainingAsDec;
         percent77.textContent = `If you want a 77% you need, ${needFor77.toFixed(2)}%`;
 
-        needFor80 = (80 - completedAsDec * yourGrade) / remainingAsDec;
+        needFor80 = (80 - completedAsDec * reportedGrade) / remainingAsDec;
         percent80.textContent = `If you want a 80% you need, ${needFor80.toFixed(2)}%`;
 
-        needFor85 = (85 - completedAsDec * yourGrade) / remainingAsDec;
+        needFor85 = (85 - completedAsDec * reportedGrade) / remainingAsDec;
         percent85.textContent = `If you want a 85% you need, ${needFor85.toFixed(2)}%`;
 
-        needFor90 = (90 - completedAsDec * yourGrade) / remainingAsDec;
+        needFor90 = (90 - completedAsDec * reportedGrade) / remainingAsDec;
         percent90.textContent = `If you want a 90% you need, ${needFor90.toFixed(2)}%`;
-
-
-        
-
     }
-
-
-    
 }
+
 
