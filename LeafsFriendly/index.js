@@ -146,15 +146,15 @@ function update_lw1() {
         if (lw1_last_player != null) {
 
             const cap_hit = document.getElementById("cap_hit").innerHTML;
-            const new_cap_hit = Number(cap_hit) - lw1_last_player.get_salary();
+            const new_cap_hit = Number(cap_hit) - Number(lw1_last_player.get_salary());
             document.getElementById("cap_hit").textContent = new_cap_hit;
 
             const bonuses = document.getElementById("bonuses").innerHTML;
-            const new_bonuses = Number(bonuses) - lw1_last_player.get_bonus();
+            const new_bonuses = Number(bonuses) - Number(lw1_last_player.get_bonus());
             document.getElementById("bonuses").textContent = new_bonuses;
 
             const cap_space = document.getElementById("cap_space").innerHTML;
-            const new_cap_space = Number(cap_space) + lw1_last_player.get_salary();
+            const new_cap_space = Number(cap_space) + Number(lw1_last_player.get_salary());
             document.getElementById("cap_space").textContent = new_cap_space;
 
             lw1_last_player = null;
@@ -172,7 +172,7 @@ function update_lw1() {
 
         //---------------------------------------------------
 
-        document.getElementById("lw1_player_age").textContent = age + " years old";
+        document.getElementById("lw1_player_age").textContent = "Age " + age;
         document.getElementById("lw1_player_position").textContent = position;
         document.getElementById("lw1_player_handedness").textContent = handed;
         document.getElementById("lw1_player_salary").textContent = "$" + salary + " ($" + bonus + ")";
@@ -260,15 +260,15 @@ function update_c1() {
         if (c1_last_player != null) {
 
             const cap_hit = document.getElementById("cap_hit").innerHTML;
-            const new_cap_hit = Number(cap_hit) - c1_last_player.get_salary();
+            const new_cap_hit = Number(cap_hit) - Number(c1_last_player.get_salary());
             document.getElementById("cap_hit").textContent = new_cap_hit;
 
             const bonuses = document.getElementById("bonuses").innerHTML;
-            const new_bonuses = Number(bonuses) - c1_last_player.get_bonus();
+            const new_bonuses = Number(bonuses) - Number(c1_last_player.get_bonus());
             document.getElementById("bonuses").textContent = new_bonuses;
 
             const cap_space = document.getElementById("cap_space").innerHTML;
-            const new_cap_space = Number(cap_space) + c1_last_player.get_salary();
+            const new_cap_space = Number(cap_space) + Number(c1_last_player.get_salary());
             document.getElementById("cap_space").textContent = new_cap_space;
 
             c1_last_player = null;
@@ -286,7 +286,7 @@ function update_c1() {
 
         //---------------------------------------------------
 
-        document.getElementById("c1_player_age").textContent = age + " years old";
+        document.getElementById("c1_player_age").textContent = "Age " + age;
         document.getElementById("c1_player_position").textContent = position;
         document.getElementById("c1_player_handedness").textContent = handed;
         document.getElementById("c1_player_salary").textContent = "$" + salary + " ($" + bonus + ")";
@@ -374,15 +374,15 @@ function update_rw1() {
         if (rw1_last_player != null) {
 
             const cap_hit = document.getElementById("cap_hit").innerHTML;
-            const new_cap_hit = Number(cap_hit) - rw1_last_player.get_salary();
+            const new_cap_hit = Number(cap_hit) - Number(rw1_last_player.get_salary());
             document.getElementById("cap_hit").textContent = new_cap_hit;
 
             const bonuses = document.getElementById("bonuses").innerHTML;
-            const new_bonuses = Number(bonuses) - rw1_last_player.get_bonus();
+            const new_bonuses = Number(bonuses) - Number(rw1_last_player.get_bonus());
             document.getElementById("bonuses").textContent = new_bonuses;
 
             const cap_space = document.getElementById("cap_space").innerHTML;
-            const new_cap_space = Number(cap_space) + rw1_last_player.get_salary();
+            const new_cap_space = Number(cap_space) + Number(rw1_last_player.get_salary());
             document.getElementById("cap_space").textContent = new_cap_space;
 
             rw1_last_player = null;
@@ -400,7 +400,7 @@ function update_rw1() {
 
         //---------------------------------------------------
 
-        document.getElementById("rw1_player_age").textContent = age + " years old";
+        document.getElementById("rw1_player_age").textContent = "Age " + age;
         document.getElementById("rw1_player_position").textContent = position;
         document.getElementById("rw1_player_handedness").textContent = handed;
         document.getElementById("rw1_player_salary").textContent = "$" + salary + " ($" + bonus + ")";
@@ -488,15 +488,15 @@ function update_lw2() {
         if (lw2_last_player != null) {
 
             const cap_hit = document.getElementById("cap_hit").innerHTML;
-            const new_cap_hit = Number(cap_hit) - lw2_last_player.get_salary();
+            const new_cap_hit = Number(cap_hit) - Number(lw2_last_player.get_salary());
             document.getElementById("cap_hit").textContent = new_cap_hit;
 
             const bonuses = document.getElementById("bonuses").innerHTML;
-            const new_bonuses = Number(bonuses) - lw2_last_player.get_bonus();
+            const new_bonuses = Number(bonuses) - Number(lw2_last_player.get_bonus());
             document.getElementById("bonuses").textContent = new_bonuses;
 
             const cap_space = document.getElementById("cap_space").innerHTML;
-            const new_cap_space = Number(cap_space) + lw2_last_player.get_salary();
+            const new_cap_space = Number(cap_space) + Number(lw2_last_player.get_salary());
             document.getElementById("cap_space").textContent = new_cap_space;
 
             lw2_last_player = null;
@@ -514,7 +514,7 @@ function update_lw2() {
 
         //---------------------------------------------------
 
-        document.getElementById("lw2_player_age").textContent = age + " years old";
+        document.getElementById("lw2_player_age").textContent = "Age " + age;
         document.getElementById("lw2_player_position").textContent = position;
         document.getElementById("lw2_player_handedness").textContent = handed;
         document.getElementById("lw2_player_salary").textContent = "$" + salary + " ($" + bonus + ")";
@@ -602,15 +602,15 @@ function update_c2() {
         if (c2_last_player != null) {
 
             const cap_hit = document.getElementById("cap_hit").innerHTML;
-            const new_cap_hit = Number(cap_hit) - c2_last_player.get_salary();
+            const new_cap_hit = Number(cap_hit) - Number(c2_last_player.get_salary());
             document.getElementById("cap_hit").textContent = new_cap_hit;
 
             const bonuses = document.getElementById("bonuses").innerHTML;
-            const new_bonuses = Number(bonuses) - c2_last_player.get_bonus();
+            const new_bonuses = Number(bonuses) - Number(c2_last_player.get_bonus());
             document.getElementById("bonuses").textContent = new_bonuses;
 
             const cap_space = document.getElementById("cap_space").innerHTML;
-            const new_cap_space = Number(cap_space) + c2_last_player.get_salary();
+            const new_cap_space = Number(cap_space) + Number(c2_last_player.get_salary());
             document.getElementById("cap_space").textContent = new_cap_space;
 
             c2_last_player = null;
@@ -628,7 +628,7 @@ function update_c2() {
 
         //---------------------------------------------------
 
-        document.getElementById("c2_player_age").textContent = age + " years old";
+        document.getElementById("c2_player_age").textContent = "Age " + age;
         document.getElementById("c2_player_position").textContent = position;
         document.getElementById("c2_player_handedness").textContent = handed;
         document.getElementById("c2_player_salary").textContent = "$" + salary + " ($" + bonus + ")";
@@ -742,7 +742,7 @@ function update_rw2() {
 
         //---------------------------------------------------
 
-        document.getElementById("rw2_player_age").textContent = age + " years old";
+        document.getElementById("rw2_player_age").textContent = "Age " + age;
         document.getElementById("rw2_player_position").textContent = position;
         document.getElementById("rw2_player_handedness").textContent = handed;
         document.getElementById("rw2_player_salary").textContent = "$" + salary + " ($" + bonus + ")";
@@ -830,15 +830,15 @@ function update_lw3() {
         if (lw3_last_player != null) {
 
             const cap_hit = document.getElementById("cap_hit").innerHTML;
-            const new_cap_hit = Number(cap_hit) - lw3_last_player.get_salary();
+            const new_cap_hit = Number(cap_hit) - Number(lw3_last_player.get_salary());
             document.getElementById("cap_hit").textContent = new_cap_hit;
 
             const bonuses = document.getElementById("bonuses").innerHTML;
-            const new_bonuses = Number(bonuses) - lw3_last_player.get_bonus();
+            const new_bonuses = Number(bonuses) - Number(lw3_last_player.get_bonus());
             document.getElementById("bonuses").textContent = new_bonuses;
 
             const cap_space = document.getElementById("cap_space").innerHTML;
-            const new_cap_space = Number(cap_space) + lw3_last_player.get_salary();
+            const new_cap_space = Number(cap_space) + Number(lw3_last_player.get_salary());
             document.getElementById("cap_space").textContent = new_cap_space;
 
             lw3_last_player = null;
@@ -856,7 +856,7 @@ function update_lw3() {
 
         //---------------------------------------------------
 
-        document.getElementById("lw3_player_age").textContent = age + " years old";
+        document.getElementById("lw3_player_age").textContent = "Age " + age;
         document.getElementById("lw3_player_position").textContent = position;
         document.getElementById("lw3_player_handedness").textContent = handed;
         document.getElementById("lw3_player_salary").textContent = "$" + salary + " ($" + bonus + ")";
@@ -944,15 +944,15 @@ function update_c3() {
         if (c3_last_player != null) {
 
             const cap_hit = document.getElementById("cap_hit").innerHTML;
-            const new_cap_hit = Number(cap_hit) - c3_last_player.get_salary();
+            const new_cap_hit = Number(cap_hit) - Number(c3_last_player.get_salary());
             document.getElementById("cap_hit").textContent = new_cap_hit;
 
             const bonuses = document.getElementById("bonuses").innerHTML;
-            const new_bonuses = Number(bonuses) - c3_last_player.get_bonus();
+            const new_bonuses = Number(bonuses) - Number(c3_last_player.get_bonus());
             document.getElementById("bonuses").textContent = new_bonuses;
 
             const cap_space = document.getElementById("cap_space").innerHTML;
-            const new_cap_space = Number(cap_space) + c3_last_player.get_salary();
+            const new_cap_space = Number(cap_space) + Number(c3_last_player.get_salary());
             document.getElementById("cap_space").textContent = new_cap_space;
 
             c3_last_player = null;
@@ -970,7 +970,7 @@ function update_c3() {
 
         //---------------------------------------------------
 
-        document.getElementById("c3_player_age").textContent = age + " years old";
+        document.getElementById("c3_player_age").textContent = "Age " + age;
         document.getElementById("c3_player_position").textContent = position;
         document.getElementById("c3_player_handedness").textContent = handed;
         document.getElementById("c3_player_salary").textContent = "$" + salary + " ($" + bonus + ")";
@@ -1058,15 +1058,15 @@ function update_rw3() {
         if (rw3_last_player != null) {
 
             const cap_hit = document.getElementById("cap_hit").innerHTML;
-            const new_cap_hit = Number(cap_hit) - rw3_last_player.get_salary();
+            const new_cap_hit = Number(cap_hit) - Number(rw3_last_player.get_salary());
             document.getElementById("cap_hit").textContent = new_cap_hit;
 
             const bonuses = document.getElementById("bonuses").innerHTML;
-            const new_bonuses = Number(bonuses) - rw3_last_player.get_bonus();
+            const new_bonuses = Number(bonuses) - Number(rw3_last_player.get_bonus());
             document.getElementById("bonuses").textContent = new_bonuses;
 
             const cap_space = document.getElementById("cap_space").innerHTML;
-            const new_cap_space = Number(cap_space) + rw3_last_player.get_salary();
+            const new_cap_space = Number(cap_space) + Number(rw3_last_player.get_salary());
             document.getElementById("cap_space").textContent = new_cap_space;
 
             rw3_last_player = null;
@@ -1084,7 +1084,7 @@ function update_rw3() {
 
         //---------------------------------------------------
 
-        document.getElementById("rw3_player_age").textContent = age + " years old";
+        document.getElementById("rw3_player_age").textContent = "Age " + age;
         document.getElementById("rw3_player_position").textContent = position;
         document.getElementById("rw3_player_handedness").textContent = handed;
         document.getElementById("rw3_player_salary").textContent = "$" + salary + " ($" + bonus + ")";
@@ -1172,15 +1172,15 @@ function update_lw4() {
         if (lw4_last_player != null) {
 
             const cap_hit = document.getElementById("cap_hit").innerHTML;
-            const new_cap_hit = Number(cap_hit) - lw4_last_player.get_salary();
+            const new_cap_hit = Number(cap_hit) - Number(lw4_last_player.get_salary());
             document.getElementById("cap_hit").textContent = new_cap_hit;
 
             const bonuses = document.getElementById("bonuses").innerHTML;
-            const new_bonuses = Number(bonuses) - lw4_last_player.get_bonus();
+            const new_bonuses = Number(bonuses) - Number(lw4_last_player.get_bonus());
             document.getElementById("bonuses").textContent = new_bonuses;
 
             const cap_space = document.getElementById("cap_space").innerHTML;
-            const new_cap_space = Number(cap_space) + lw4_last_player.get_salary();
+            const new_cap_space = Number(cap_space) + Number(lw4_last_player.get_salary());
             document.getElementById("cap_space").textContent = new_cap_space;
 
             lw4_last_player = null;
@@ -1198,7 +1198,7 @@ function update_lw4() {
 
         //---------------------------------------------------
 
-        document.getElementById("lw4_player_age").textContent = age + " years old";
+        document.getElementById("lw4_player_age").textContent = "Age " + age;
         document.getElementById("lw4_player_position").textContent = position;
         document.getElementById("lw4_player_handedness").textContent = handed;
         document.getElementById("lw4_player_salary").textContent = "$" + salary + " ($" + bonus + ")";
@@ -1286,15 +1286,15 @@ function update_c4() {
         if (c4_last_player != null) {
 
             const cap_hit = document.getElementById("cap_hit").innerHTML;
-            const new_cap_hit = Number(cap_hit) - c4_last_player.get_salary();
+            const new_cap_hit = Number(cap_hit) - Number(c4_last_player.get_salary());
             document.getElementById("cap_hit").textContent = new_cap_hit;
 
             const bonuses = document.getElementById("bonuses").innerHTML;
-            const new_bonuses = Number(bonuses) - c4_last_player.get_bonus();
+            const new_bonuses = Number(bonuses) - Number(c4_last_player.get_bonus());
             document.getElementById("bonuses").textContent = new_bonuses;
 
             const cap_space = document.getElementById("cap_space").innerHTML;
-            const new_cap_space = Number(cap_space) + c4_last_player.get_salary();
+            const new_cap_space = Number(cap_space) + Number(c4_last_player.get_salary());
             document.getElementById("cap_space").textContent = new_cap_space;
 
             c4_last_player = null;
@@ -1312,7 +1312,7 @@ function update_c4() {
 
         //---------------------------------------------------
 
-        document.getElementById("c4_player_age").textContent = age + " years old";
+        document.getElementById("c4_player_age").textContent = "Age " + age;
         document.getElementById("c4_player_position").textContent = position;
         document.getElementById("c4_player_handedness").textContent = handed;
         document.getElementById("c4_player_salary").textContent = "$" + salary + " ($" + bonus + ")";
@@ -1400,15 +1400,15 @@ function update_rw4() {
         if (rw4_last_player != null) {
 
             const cap_hit = document.getElementById("cap_hit").innerHTML;
-            const new_cap_hit = Number(cap_hit) - rw4_last_player.get_salary();
+            const new_cap_hit = Number(cap_hit) - Number(rw4_last_player.get_salary());
             document.getElementById("cap_hit").textContent = new_cap_hit;
 
             const bonuses = document.getElementById("bonuses").innerHTML;
-            const new_bonuses = Number(bonuses) - rw4_last_player.get_bonus();
+            const new_bonuses = Number(bonuses) - Number(rw4_last_player.get_bonus());
             document.getElementById("bonuses").textContent = new_bonuses;
 
             const cap_space = document.getElementById("cap_space").innerHTML;
-            const new_cap_space = Number(cap_space) + rw4_last_player.get_salary();
+            const new_cap_space = Number(cap_space) + Number(rw4_last_player.get_salary());
             document.getElementById("cap_space").textContent = new_cap_space;
 
             rw4_last_player = null;
@@ -1426,7 +1426,7 @@ function update_rw4() {
 
         //---------------------------------------------------
 
-        document.getElementById("rw4_player_age").textContent = age + " years old";
+        document.getElementById("rw4_player_age").textContent = "Age " + age;
         document.getElementById("rw4_player_position").textContent = position;
         document.getElementById("rw4_player_handedness").textContent = handed;
         document.getElementById("rw4_player_salary").textContent = "$" + salary + " ($" + bonus + ")";
@@ -1514,15 +1514,15 @@ function update_ld1() {
         if (ld1_last_player != null) {
 
             const cap_hit = document.getElementById("cap_hit").innerHTML;
-            const new_cap_hit = Number(cap_hit) - ld1_last_player.get_salary();
+            const new_cap_hit = Number(cap_hit) - Number(ld1_last_player.get_salary());
             document.getElementById("cap_hit").textContent = new_cap_hit;
 
             const bonuses = document.getElementById("bonuses").innerHTML;
-            const new_bonuses = Number(bonuses) - ld1_last_player.get_bonus();
+            const new_bonuses = Number(bonuses) - Number(ld1_last_player.get_bonus());
             document.getElementById("bonuses").textContent = new_bonuses;
 
             const cap_space = document.getElementById("cap_space").innerHTML;
-            const new_cap_space = Number(cap_space) + ld1_last_player.get_salary();
+            const new_cap_space = Number(cap_space) + Number(ld1_last_player.get_salary());
             document.getElementById("cap_space").textContent = new_cap_space;
 
             ld1_last_player = null;
@@ -1540,7 +1540,7 @@ function update_ld1() {
 
         //---------------------------------------------------
 
-        document.getElementById("ld1_player_age").textContent = age + " years old";
+        document.getElementById("ld1_player_age").textContent = "Age " + age;
         document.getElementById("ld1_player_position").textContent = position;
         document.getElementById("ld1_player_handedness").textContent = handed;
         document.getElementById("ld1_player_salary").textContent = "$" + salary + " ($" + bonus + ")";
@@ -1628,15 +1628,15 @@ function update_rd1() {
         if (rd1_last_player != null) {
 
             const cap_hit = document.getElementById("cap_hit").innerHTML;
-            const new_cap_hit = Number(cap_hit) - rd1_last_player.get_salary();
+            const new_cap_hit = Number(cap_hit) - Number(rd1_last_player.get_salary());
             document.getElementById("cap_hit").textContent = new_cap_hit;
 
             const bonuses = document.getElementById("bonuses").innerHTML;
-            const new_bonuses = Number(bonuses) - rd1_last_player.get_bonus();
+            const new_bonuses = Number(bonuses) - Number(rd1_last_player.get_bonus());
             document.getElementById("bonuses").textContent = new_bonuses;
 
             const cap_space = document.getElementById("cap_space").innerHTML;
-            const new_cap_space = Number(cap_space) + rd1_last_player.get_salary();
+            const new_cap_space = Number(cap_space) + Number(rd1_last_player.get_salary());
             document.getElementById("cap_space").textContent = new_cap_space;
 
             rd1_last_player = null;
@@ -1654,7 +1654,7 @@ function update_rd1() {
 
         //---------------------------------------------------
 
-        document.getElementById("rd1_player_age").textContent = age + " years old";
+        document.getElementById("rd1_player_age").textContent = "Age " + age;
         document.getElementById("rd1_player_position").textContent = position;
         document.getElementById("rd1_player_handedness").textContent = handed;
         document.getElementById("rd1_player_salary").textContent = "$" + salary + " ($" + bonus + ")";
@@ -1742,15 +1742,15 @@ function update_ld2() {
         if (ld2_last_player != null) {
 
             const cap_hit = document.getElementById("cap_hit").innerHTML;
-            const new_cap_hit = Number(cap_hit) - ld2_last_player.get_salary();
+            const new_cap_hit = Number(cap_hit) - Number(ld2_last_player.get_salary());
             document.getElementById("cap_hit").textContent = new_cap_hit;
 
             const bonuses = document.getElementById("bonuses").innerHTML;
-            const new_bonuses = Number(bonuses) - ld2_last_player.get_bonus();
+            const new_bonuses = Number(bonuses) - Number(ld2_last_player.get_bonus());
             document.getElementById("bonuses").textContent = new_bonuses;
 
             const cap_space = document.getElementById("cap_space").innerHTML;
-            const new_cap_space = Number(cap_space) + ld2_last_player.get_salary();
+            const new_cap_space = Number(cap_space) + Number(ld2_last_player.get_salary());
             document.getElementById("cap_space").textContent = new_cap_space;
 
             ld2_last_player = null;
@@ -1768,7 +1768,7 @@ function update_ld2() {
 
         //---------------------------------------------------
 
-        document.getElementById("ld2_player_age").textContent = age + " years old";
+        document.getElementById("ld2_player_age").textContent = "Age " + age;
         document.getElementById("ld2_player_position").textContent = position;
         document.getElementById("ld2_player_handedness").textContent = handed;
         document.getElementById("ld2_player_salary").textContent = "$" + salary + " ($" + bonus + ")";
@@ -1856,15 +1856,15 @@ function update_rd2() {
         if (rd2_last_player != null) {
 
             const cap_hit = document.getElementById("cap_hit").innerHTML;
-            const new_cap_hit = Number(cap_hit) - rd2_last_player.get_salary();
+            const new_cap_hit = Number(cap_hit) - Number(rd2_last_player.get_salary());
             document.getElementById("cap_hit").textContent = new_cap_hit;
 
             const bonuses = document.getElementById("bonuses").innerHTML;
-            const new_bonuses = Number(bonuses) - rd2_last_player.get_bonus();
+            const new_bonuses = Number(bonuses) - Number(rd2_last_player.get_bonus());
             document.getElementById("bonuses").textContent = new_bonuses;
 
             const cap_space = document.getElementById("cap_space").innerHTML;
-            const new_cap_space = Number(cap_space) + rd2_last_player.get_salary();
+            const new_cap_space = Number(cap_space) + Number(rd2_last_player.get_salary());
             document.getElementById("cap_space").textContent = new_cap_space;
 
             rd2_last_player = null;
@@ -1882,7 +1882,7 @@ function update_rd2() {
 
         //---------------------------------------------------
 
-        document.getElementById("rd2_player_age").textContent = age + " years old";
+        document.getElementById("rd2_player_age").textContent = "Age " + age;
         document.getElementById("rd2_player_position").textContent = position;
         document.getElementById("rd2_player_handedness").textContent = handed;
         document.getElementById("rd2_player_salary").textContent = "$" + salary + " ($" + bonus + ")";
@@ -1970,15 +1970,15 @@ function update_ld3() {
         if (ld3_last_player != null) {
 
             const cap_hit = document.getElementById("cap_hit").innerHTML;
-            const new_cap_hit = Number(cap_hit) - ld3_last_player.get_salary();
+            const new_cap_hit = Number(cap_hit) - Number(ld3_last_player.get_salary());
             document.getElementById("cap_hit").textContent = new_cap_hit;
 
             const bonuses = document.getElementById("bonuses").innerHTML;
-            const new_bonuses = Number(bonuses) - ld3_last_player.get_bonus();
+            const new_bonuses = Number(bonuses) - Number(ld3_last_player.get_bonus());
             document.getElementById("bonuses").textContent = new_bonuses;
 
             const cap_space = document.getElementById("cap_space").innerHTML;
-            const new_cap_space = Number(cap_space) + ld3_last_player.get_salary();
+            const new_cap_space = Number(cap_space) + Number(ld3_last_player.get_salary());
             document.getElementById("cap_space").textContent = new_cap_space;
 
             ld3_last_player = null;
@@ -1996,7 +1996,7 @@ function update_ld3() {
 
         //---------------------------------------------------
 
-        document.getElementById("ld3_player_age").textContent = age + " years old";
+        document.getElementById("ld3_player_age").textContent = "Age " + age;
         document.getElementById("ld3_player_position").textContent = position;
         document.getElementById("ld3_player_handedness").textContent = handed;
         document.getElementById("ld3_player_salary").textContent = "$" + salary + " ($" + bonus + ")";
@@ -2084,15 +2084,15 @@ function update_rd3() {
         if (rd3_last_player != null) {
 
             const cap_hit = document.getElementById("cap_hit").innerHTML;
-            const new_cap_hit = Number(cap_hit) - rd3_last_player.get_salary();
+            const new_cap_hit = Number(cap_hit) - Number(rd3_last_player.get_salary());
             document.getElementById("cap_hit").textContent = new_cap_hit;
 
             const bonuses = document.getElementById("bonuses").innerHTML;
-            const new_bonuses = Number(bonuses) - rd3_last_player.get_bonus();
+            const new_bonuses = Number(bonuses) - Number(rd3_last_player.get_bonus());
             document.getElementById("bonuses").textContent = new_bonuses;
 
             const cap_space = document.getElementById("cap_space").innerHTML;
-            const new_cap_space = Number(cap_space) + rd3_last_player.get_salary();
+            const new_cap_space = Number(cap_space) + Number(rd3_last_player.get_salary());
             document.getElementById("cap_space").textContent = new_cap_space;
 
             rd3_last_player = null;
@@ -2110,7 +2110,7 @@ function update_rd3() {
 
         //---------------------------------------------------
 
-        document.getElementById("rd3_player_age").textContent = age + " years old";
+        document.getElementById("rd3_player_age").textContent = "Age " + age;
         document.getElementById("rd3_player_position").textContent = position;
         document.getElementById("rd3_player_handedness").textContent = handed;
         document.getElementById("rd3_player_salary").textContent = "$" + salary + " ($" + bonus + ")";
@@ -2198,15 +2198,15 @@ function update_g1() {
         if (g1_last_player != null) {
 
             const cap_hit = document.getElementById("cap_hit").innerHTML;
-            const new_cap_hit = Number(cap_hit) - g1_last_player.get_salary();
+            const new_cap_hit = Number(cap_hit) - Number(g1_last_player.get_salary());
             document.getElementById("cap_hit").textContent = new_cap_hit;
 
             const bonuses = document.getElementById("bonuses").innerHTML;
-            const new_bonuses = Number(bonuses) - g1_last_player.get_bonus();
+            const new_bonuses = Number(bonuses) - Number(g1_last_player.get_bonus());
             document.getElementById("bonuses").textContent = new_bonuses;
 
             const cap_space = document.getElementById("cap_space").innerHTML;
-            const new_cap_space = Number(cap_space) + g1_last_player.get_salary();
+            const new_cap_space = Number(cap_space) + Number(g1_last_player.get_salary());
             document.getElementById("cap_space").textContent = new_cap_space;
 
             g1_last_player = null;
@@ -2224,7 +2224,7 @@ function update_g1() {
 
         //---------------------------------------------------
 
-        document.getElementById("g1_player_age").textContent = age + " years old";
+        document.getElementById("g1_player_age").textContent = "Age " + age;
         document.getElementById("g1_player_position").textContent = position;
         document.getElementById("g1_player_handedness").textContent = handed;
         document.getElementById("g1_player_salary").textContent = "$" + salary + " ($" + bonus + ")";
@@ -2312,15 +2312,15 @@ function update_g2() {
         if (g2_last_player != null) {
 
             const cap_hit = document.getElementById("cap_hit").innerHTML;
-            const new_cap_hit = Number(cap_hit) - g2_last_player.get_salary();
+            const new_cap_hit = Number(cap_hit) - Number(g2_last_player.get_salary());
             document.getElementById("cap_hit").textContent = new_cap_hit;
 
             const bonuses = document.getElementById("bonuses").innerHTML;
-            const new_bonuses = Number(bonuses) - g2_last_player.get_bonus();
+            const new_bonuses = Number(bonuses) - Number(g2_last_player.get_bonus());
             document.getElementById("bonuses").textContent = new_bonuses;
 
             const cap_space = document.getElementById("cap_space").innerHTML;
-            const new_cap_space = Number(cap_space) + g2_last_player.get_salary();
+            const new_cap_space = Number(cap_space) + Number(g2_last_player.get_salary());
             document.getElementById("cap_space").textContent = new_cap_space;
 
             g2_last_player = null;
@@ -2338,7 +2338,7 @@ function update_g2() {
 
         //---------------------------------------------------
 
-        document.getElementById("g2_player_age").textContent = age + " years old";
+        document.getElementById("g2_player_age").textContent = "Age " + age;
         document.getElementById("g2_player_position").textContent = position;
         document.getElementById("g2_player_handedness").textContent = handed;
         document.getElementById("g2_player_salary").textContent = "$" + salary + " ($" + bonus + ")";
@@ -2426,15 +2426,15 @@ function update_s1() {
         if (s1_last_player != null) {
 
             const cap_hit = document.getElementById("cap_hit").innerHTML;
-            const new_cap_hit = Number(cap_hit) - s1_last_player.get_salary();
+            const new_cap_hit = Number(cap_hit) - Number(s1_last_player.get_salary());
             document.getElementById("cap_hit").textContent = new_cap_hit;
 
             const bonuses = document.getElementById("bonuses").innerHTML;
-            const new_bonuses = Number(bonuses) - s1_last_player.get_bonus();
+            const new_bonuses = Number(bonuses) - Number(s1_last_player.get_bonus());
             document.getElementById("bonuses").textContent = new_bonuses;
 
             const cap_space = document.getElementById("cap_space").innerHTML;
-            const new_cap_space = Number(cap_space) + s1_last_player.get_salary();
+            const new_cap_space = Number(cap_space) + Number(s1_last_player.get_salary());
             document.getElementById("cap_space").textContent = new_cap_space;
 
             s1_last_player = null;
@@ -2452,7 +2452,7 @@ function update_s1() {
 
         //---------------------------------------------------
 
-        document.getElementById("s1_player_age").textContent = age + " years old";
+        document.getElementById("s1_player_age").textContent = "Age " + age;
         document.getElementById("s1_player_position").textContent = position;
         document.getElementById("s1_player_handedness").textContent = handed;
         document.getElementById("s1_player_salary").textContent = "$" + salary + " ($" + bonus + ")";
@@ -2540,15 +2540,15 @@ function update_s2() {
         if (s2_last_player != null) {
 
             const cap_hit = document.getElementById("cap_hit").innerHTML;
-            const new_cap_hit = Number(cap_hit) - s2_last_player.get_salary();
+            const new_cap_hit = Number(cap_hit) - Number(s2_last_player.get_salary());
             document.getElementById("cap_hit").textContent = new_cap_hit;
 
             const bonuses = document.getElementById("bonuses").innerHTML;
-            const new_bonuses = Number(bonuses) - s2_last_player.get_bonus();
+            const new_bonuses = Number(bonuses) - Number(s2_last_player.get_bonus());
             document.getElementById("bonuses").textContent = new_bonuses;
 
             const cap_space = document.getElementById("cap_space").innerHTML;
-            const new_cap_space = Number(cap_space) + s2_last_player.get_salary();
+            const new_cap_space = Number(cap_space) + Number(s2_last_player.get_salary());
             document.getElementById("cap_space").textContent = new_cap_space;
 
             s2_last_player = null;
@@ -2566,7 +2566,7 @@ function update_s2() {
 
         //---------------------------------------------------
 
-        document.getElementById("s2_player_age").textContent = age + " years old";
+        document.getElementById("s2_player_age").textContent = "Age " + age;
         document.getElementById("s2_player_position").textContent = position;
         document.getElementById("s2_player_handedness").textContent = handed;
         document.getElementById("s2_player_salary").textContent = "$" + salary + " ($" + bonus + ")";
@@ -2653,15 +2653,15 @@ function update_s3() {
         if (s3_last_player != null) {
 
             const cap_hit = document.getElementById("cap_hit").innerHTML;
-            const new_cap_hit = Number(cap_hit) - s3_last_player.get_salary();
+            const new_cap_hit = Number(cap_hit) - Number(s3_last_player.get_salary());
             document.getElementById("cap_hit").textContent = new_cap_hit;
 
             const bonuses = document.getElementById("bonuses").innerHTML;
-            const new_bonuses = Number(bonuses) - s3_last_player.get_bonus();
+            const new_bonuses = Number(bonuses) - Number(s3_last_player.get_bonus());
             document.getElementById("bonuses").textContent = new_bonuses;
 
             const cap_space = document.getElementById("cap_space").innerHTML;
-            const new_cap_space = Number(cap_space) + s3_last_player.get_salary();
+            const new_cap_space = Number(cap_space) + Number(s3_last_player.get_salary());
             document.getElementById("cap_space").textContent = new_cap_space;
 
             s3_last_player = null;
@@ -2679,7 +2679,7 @@ function update_s3() {
 
         //---------------------------------------------------
 
-        document.getElementById("s3_player_age").textContent = age + " years old";
+        document.getElementById("s3_player_age").textContent = "Age " + age;
         document.getElementById("s3_player_position").textContent = position;
         document.getElementById("s3_player_handedness").textContent = handed;
         document.getElementById("s3_player_salary").textContent = "$" + salary + " ($" + bonus + ")";
@@ -2739,6 +2739,11 @@ function create_player() {
 
     // create player instance
     var create_name = document.getElementById("create_name").value;
+
+    if (create_name == "") {
+        create_name = "Unnamed Player";
+    }
+
     var create_salary = document.getElementById("create_salary").value;
     var create_bonus = document.getElementById("create_bonus").value;
     var create_term = document.getElementById("create_term").value;
@@ -2759,6 +2764,10 @@ function create_player() {
 
 function create_player_2() {
     var create_name = document.getElementById("create_name").value;
+
+    if (create_name == "") {
+        create_name = "Unnamed Player";
+    }
 
     var new_option_lw1 = document.createElement("option");
     new_option_lw1.text = create_name;

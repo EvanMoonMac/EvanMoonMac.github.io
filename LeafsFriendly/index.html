@@ -14,32 +14,32 @@
 
     <div id="cap_info">
         <div class="cap_info_elem">
-            <div>Roster Size:</div>
+            <div class="cap_info_elem_heading">Roster Size</div>
             <div id="roster_size">0</div>
         </div>
 
         <div class="cap_info_elem">
-            <div>Salary Cap ($):</div>
+            <div class="cap_info_elem_heading">Salary Cap ($)</div>
             <div id="cap_ceiling">88000000</div>
         </div>
 
         <div class="cap_info_elem">
-            <div>Cap Hit ($):</div>
+            <div class="cap_info_elem_heading">Cap Hit ($)</div>
             <div id="cap_hit">0</div>
         </div>
 
         <div class="cap_info_elem">
-            <div>Overages ($):</div>
+            <div class="cap_info_elem_heading">Overages ($)</div>
             <div id="overages">0</div>
         </div>
 
         <div class="cap_info_elem">
-            <div>Bonuses ($):</div>
+            <div class="cap_info_elem_heading">Bonuses ($)</div>
             <div id="bonuses">0</div>
         </div>
 
-        <div class="cap_info_elem">
-            <div>Cap Space ($):</div>
+        <div id="salary_cap_elem"" class="cap_info_elem">
+            <div class="cap_info_elem_heading">Cap Space ($)</div>
             <div id="cap_space">88000000</div>
         </div>
     </div>
@@ -50,7 +50,7 @@
     <div id="forwards">
         <div class="line">
             <div>
-                <div>Left Wingers</div>
+                <div class="position_heading">Left Wingers</div>
                 <div class="info_box">
                     <div>
                         <ul>
@@ -93,7 +93,7 @@
                 </select>
             </div>
             <div>
-                <div>Centres</div>
+                <div class="position_heading">Centres</div>
                 <div class="info_box">
                     <div>
                         <ul>
@@ -136,7 +136,7 @@
                 </select>
             </div>
             <div>
-                <div>Right Wingers</div>
+                <div class="position_heading">Right Wingers</div>
                 <div class="info_box">
                     <div>
                         <ul>
@@ -575,7 +575,7 @@
     <div id="defence">
         <div class="pair">
             <div>
-                <div>Left Defensemen</div>
+                <div class="position_heading">Left Defensemen</div>
                 <div class="info_box">
                     <div>
                         <ul>
@@ -618,7 +618,7 @@
                 </select>
             </div>
             <div>
-                <div>Right Defensemen</div>
+                <div class="position_heading">Right Defensemen</div>
                 <div class="info_box">
                     <div>
                         <ul>
@@ -844,7 +844,7 @@
     <div id="goalies">
         <div class="goalies">
             <div>
-                <div>Starting Goalie</div>
+                <div class="position_heading">Starting Goalie</div>
                 <div class="info_box">
                     <div>
                         <ul>
@@ -887,7 +887,7 @@
                 </select>
             </div>
             <div>
-                <div>Backup Goalie</div>
+                <div class="position_heading">Backup Goalie</div>
                 <div class="info_box">
                     <div>
                         <ul>
@@ -939,7 +939,7 @@
     <div id="scratches">
         <div class="scratches">
             <div>
-                <div>Scratch</div>
+                <div class="position_heading">Scratch</div>
                 <div class="info_box">
                     <div>
                         <ul>
@@ -982,7 +982,7 @@
                 </select>
             </div>
             <div>
-                <div>Scratch</div>
+                <div class="position_heading">Scratch</div>
                 <div class="info_box">
                     <div>
                         <ul>
@@ -1025,7 +1025,7 @@
                 </select>
             </div>
             <div>
-                <div>Scratch</div>
+                <div class="position_heading">Scratch</div>
                 <div class="info_box">
                     <div>
                         <ul>
@@ -1070,65 +1070,103 @@
 
         </div>
 
+        <br>
 
 
-
+        <h2>Create a Player</h2>
+        
         <div id="create_player">
-            <h2>Create a Player:</h2>
-            <label for="create_name">Name (FirstName LastName):</label>
-            <input id="create_name" type="text">
 
-            <label for="create_salary">Cap Hit:</label>
-            <input id="create_salary" type="number" min="775000">
+            
 
-            <label for="create_bonus">Bonus:</label>
-            <input id="create_bonus" type="number">
+            <div class="create_player_grouping">
 
-            <label for="create_term">Term:</label>
-            <input id="create_term" type="number" min="1" max="8">
+                <div>
+                    <label for="create_name">Full Name</label>
+                    <input id="create_name" type="text" placeholder="FirstName LastName">
+                </div>
 
-            <label for="create_expiry">Expiry:</label>
-            <select id="create_expiry">
-                <option value="UFA">UFA</option>
-                <option value="RFA">RFA</option>
-                <option value="10.2c">10.2c</option>
+                <div>
+                    <label for="create_salary">Cap Hit</label>
+                    <input id="create_salary" type="number" min="775000" value="775000">
+                </div>
 
-            </select>
+                <div>
+                    <label for="create_bonus">Bonus</label>
+                    <input id="create_bonus" type="number" value="0" min="0">
+                </div>
 
-            <label for="create_position">Position:</label>
-            <select id="create_position">
-                <option value="LW">LW</option>
-                <option value="C">C</option>
-                <option value="RW">RW</option>
-                <option value="LD">LD</option>
-                <option value="RD">RD</option>
-                <option value="G">G</option>
-            </select>
+                <div>
+                    <label for="create_term">Term</label>
+                    <input id="create_term" type="number" value="1" min="1" max="8">
+                </div>
 
-            <label for="create_age">Age:</label>
-            <input id="create_age" type="number" min="18" max="99">
+                <div>
+                    <label for="create_expiry">Expiry</label>
+                    <select id="create_expiry">
+                        <option value="UFA">UFA</option>
+                        <option value="RFA">RFA</option>
+                        <option value="10.2c">10.2c</option>
+                    </select>
+                </div>
 
-            <label for="create_handed">Handed:</label>
-            <select id="create_handed">
-                <option value="LH">LH</option>
-                <option value="RH">RH</option>
-            </select>
+            </div>
 
-            <label for="create_clause">Clause:</label>
-            <select id="create_clause">
-                <option value="None">None</option>
-                <option value="M-NTC">M-NTC</option>
-                <option value="NTC">NTC</option>
-                <option value="NMC">NMC</option>
-            </select>
+            <div class="create_player_grouping">
 
+                <div>
+                    <label for="create_position">Position</label>
+                    <select id="create_position">
+                        <option value="LW">LW</option>
+                        <option value="C">C</option>
+                        <option value="RW">RW</option>
+                        <option value="LD">LD</option>
+                        <option value="RD">RD</option>
+                        <option value="G">G</option>
+                    </select>
+                </div>
 
+                <div>
+                    <label for="create_age">Age</label>
+                    <input id="create_age" type="number" min="18" max="99" value="18">
+                </div>
 
+                <div>
+                    <label for="create_handed">Handed</label>
+                    <select id="create_handed">
+                        <option value="LH">LH</option>
+                        <option value="RH">RH</option>
+                    </select>
+                </div>
 
-            <button id="create_button" onclick="create_player(); create_player_2();">Create</button>
+                <div>
+                    <label for="create_clause">Clause</label>
+                    <select id="create_clause">
+                        <option value="None">None</option>
+                        <option value="M-NTC">M-NTC</option>
+                        <option value="NTC">NTC</option>
+                        <option value="NMC">NMC</option>
+                    </select>
+                </div>
+
+                <div>
+                    <button id="create_button" onclick="create_player(); create_player_2();">Create</button>
+                </div>
+
+            </div>
         </div>
 
-        <h3>v0.0 Created By: Evan Moon</h3>
+
+
+        <div id="credits">
+            <div id="version">
+                v0.1
+            </div>
+
+            <div id="created_by">
+                Evan Moon (evancartermoon@gmail.com)
+            </div>
+        </div>
 
 
 
