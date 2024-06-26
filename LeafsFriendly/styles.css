@@ -173,3 +173,18 @@ button:active {
 #salary_cap_elem {
     color: #71fc52;
 }
+
+#create_a_player_spacing {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #003089;
+}
+
+#create_a_player_heading {
+    display: flex;
+    align-items: center;
+}
+
+#create_a_player_h2 {
+    font-size: 2.3em;
+}
